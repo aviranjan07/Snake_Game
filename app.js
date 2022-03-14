@@ -15,7 +15,7 @@ food = {
 // game function 
 function main(ctime) {
     window.requestAnimationFrame(main);
-    console.log(ctime);
+    // console.log(ctime);
     if((ctime - lastPrintTime) / 1000 < 1/speed) {
         return;
     }
@@ -47,5 +47,31 @@ function gameEngine() {
     foodElement.classList.add('food');
     board.appendChild(foodElement);
 }
+
+
 // main logic starts here
 window.requestAnimationFrame(main);
+window.addEventListener('keydown', e => {
+    inputDir = {x: 0 , y:1} // start the game
+    moveSound.play();
+    switch (e.key) {
+        case "ArrowUp":
+            console.log("ArrowUp")
+            break;
+
+            case "ArrowDown":
+                console.log("ArrowDown")
+                break;
+
+                case "ArrowLeft":
+                    console.log("ArrowLeft")
+                    break;
+
+                    case "ArrowRight":
+                        console.log("ArrowRight")
+                        break;
+    
+        default:
+            break;
+    }
+})
