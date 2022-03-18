@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Redressed&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -36,4 +37,13 @@
     background: linear-gradient(red , purple);
     border: .25vmin solid black;
     border-radius: 8px;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
 }
