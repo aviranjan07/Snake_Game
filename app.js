@@ -4,7 +4,7 @@ const gameOverSound = new Audio('gameover.mp3');
 const moveSound = new Audio('move.mp3');
 const musicSound = new Audio('music.mp3');
 
-let speed = 5;
+let speed = 9;
 let score = 0;
 let lastPrintTime = 0;
 let snakeArr = [
@@ -56,7 +56,7 @@ function gameEngine() {
             localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
             hiscoreBox.innerHTML = "HiScore: " + hiscoreval;
         }
-        
+
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
         let a = 2;
